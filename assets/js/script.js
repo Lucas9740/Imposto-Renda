@@ -1,3 +1,4 @@
+// função de troca de imagem do menu e responsividade
 function menuShow() {
     let menuMobile = document.querySelector('.mobile-menu');
 
@@ -9,3 +10,4 @@ function menuShow() {
         document.querySelector('.icon').src = "assets/img/close_white_36dp.svg";
     }
 }
+
