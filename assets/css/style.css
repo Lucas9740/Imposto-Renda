@@ -27,13 +27,14 @@ header {
 
 .logo h1 {
     color: white;
+    cursor: pointer;
 }
 
 .logo:hover {
-    background-color: rgb(46, 46, 46);
+    color: #7f37c9;
     border-radius: 10%;
     padding: 0.02rem;
-    margin: 1px 1px 1px 1px;
+    margin: 0.1px;
 }
 
 .nav-list {
@@ -59,7 +60,7 @@ header {
 }
 
 .nav-link:hover {
-    background-color: rgb(46, 46, 46);
+    color: #7f37c9;
     border-radius: 8%;
     padding: 0.02rem;
     margin: 1px 1px 1px 1px;
@@ -111,10 +112,22 @@ header {
         display: block;
     }
     /*  Fim da estilização do Nav-bar*/
-
-    /*Estilização do Footer ou Rodapé */
-
+   
  }
+
+/* Estilização do Rodapé Responsivo*/
+
+
+
+@media screen and (max-width: 530px){
+    /*Estilização do Footer ou Rodapé  Responsivo*/
+    
+    #footer_content {
+        grid-template-columns: repeat (1, 1fr);
+        padding: 3rem 2rem;
+    }
+}
+
  /*Estilização do Footer ou Rodapé */
 footer{
     width: 100%;
@@ -127,7 +140,7 @@ footer{
 #footer_content {
     background-color: rgb(20, 20, 20);
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     padding: 3rem 3.5rem;
 }
 
@@ -153,18 +166,96 @@ footer{
 }
 
 #footer_social_media .footer-link:hover {
-    opacity: 0.9;
+    opacity: 20;
+}
+
+#footer_social_media .footer-link i {
+    font-size: 1.5rem;
 }
 
 #instagram {
     background: linear-gradient(#7f37c9, #ff2992, #ff9807);
 }
 
-#facebook {
-    background-color: #4267b3;
+#linkedin {
+    background-color: #1e2ccce6;
 }
 
 #whatsapp {
     background-color: #25d366;
 }
 
+/*
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.footer-list .footer-link {
+    color: azure;
+    transition: all 0.4s;
+}
+
+.footer-list .footer-link:hover{
+    color: #7f37c9;
+}
+*/
+#footer_subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#footer_subscribe p {
+    color: azure;
+}
+
+#input_group {
+    display: flex;
+    align-items: center;
+    background-color:rgba(27, 49, 84, 0);
+    border-radius: 4px;
+}
+
+#input_group input{
+    all: unset;
+    padding: 0.75rem;
+    width: 50%;
+}
+
+#input_group button {
+    background-color: #7f37c9;
+    border: none;
+    color: azure;
+    padding: 0px 1.25rem;
+    font-size: 1.25rem;
+    height: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#input_group button:hover {
+    opacity: 0.8;
+    
+}
+
+#input_group i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    width: 2rem;
+    color: white;
+}
+
+#footer_copyrigth {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+}
