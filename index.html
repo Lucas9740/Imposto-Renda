@@ -37,7 +37,9 @@
         </div>
     </header>
     <!--Container de Imagens-->
+    <main>
 
+    </main>
     <!-- Rodapé com informações-->
     <footer>
         <div id="footer_content">
@@ -46,44 +48,22 @@
                 <p>Frase Motivacional</p>
 
                 <div id="footer_social_media">
-                    <a href="#" class="footer-link" id="instagram">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-
                     <a href="#" class="footer-link" id="linkedin">
                         <i class="fa-brands fa-linkedin-in"></i>
                     </a>
-
-                    <a href="#" class="footer-link" id="whatsapp">
-                        <i class="fa-brands fa-whatsapp"></i>
+                    <a href="#" class="footer-link" id="whatsappButton">
+                        <i class="fa-brands fa-whatsapp" onclick="whatsappButton()"></i>
                     </a>
                 </div>
-            </div>
-            <!--
-            <ul class="footer-list">
-                <li>
-                    <h3>Blog</h3>
-                </li>
-                <li>
-                    <a href="#" class="footer-link">Assunto</a>
-                </li>
-                <li>
-                    <a href="#" class="footer-link">Assunto2</a>
-                </li>
-                <li>
-                    <a href="#" class="footer-link">Assunto3</a>
-                </li>
-            </ul>
-            -->
+            </div>           
             <div id="footer_subscribe">
                 <h3>E-mail</h3>
-                <p>Copie o e-mail e entre em contato</p>
-                <div id="input_group">
-                    <input type="email" id="email" placeholder="lucas10besilva@gmail.com">
+                <p>Clique no botão abaixo para copiar o e-mail e entrar em contato</p>                
+                <div id="input_group">                  
                     <div>
-                        <button>
+                        <button onclick="copyButton()" id="copyButton">
                         <i class="fa-regular fa-copy"></i>
-                        </button>
+                        </button>                       
                     </div>                    
                 </div>
             </div>

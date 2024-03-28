@@ -8,6 +8,9 @@
     letter-spacing: 1px;
 }
 
+main {
+    height: 80vh;
+}
 /*  Estilização do Cabeçalho e nav-bar*/
 header {
     background-color: rgb(20, 20, 20);
@@ -112,21 +115,10 @@ header {
         display: block;
     }
     /*  Fim da estilização do Nav-bar*/
-   
+
  }
 
-/* Estilização do Rodapé Responsivo*/
 
-
-
-@media screen and (max-width: 530px){
-    /*Estilização do Footer ou Rodapé  Responsivo*/
-    
-    #footer_content {
-        grid-template-columns: repeat (1, 1fr);
-        padding: 3rem 2rem;
-    }
-}
 
  /*Estilização do Footer ou Rodapé */
 footer{
@@ -181,27 +173,10 @@ footer{
     background-color: #1e2ccce6;
 }
 
-#whatsapp {
+#whatsappButton {
     background-color: #25d366;
 }
 
-/*
-.footer-list {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    list-style: none;
-}
-
-.footer-list .footer-link {
-    color: azure;
-    transition: all 0.4s;
-}
-
-.footer-list .footer-link:hover{
-    color: #7f37c9;
-}
-*/
 #footer_subscribe {
     display: flex;
     flex-direction: column;
@@ -215,14 +190,14 @@ footer{
 #input_group {
     display: flex;
     align-items: center;
-    background-color:rgba(27, 49, 84, 0);
+    background-color:rgba(0, 69, 181, 0);
     border-radius: 4px;
 }
 
 #input_group input{
     all: unset;
     padding: 0.75rem;
-    width: 50%;
+    width: 35%;
 }
 
 #input_group button {
@@ -258,4 +233,12 @@ footer{
     font-size: 0.9rem;
     padding: 1.5rem;
     font-weight: 100;
+}
+
+@media screen and (max-width: 660px) {
+    #footer_content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+    }
 }
