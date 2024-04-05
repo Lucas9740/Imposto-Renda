@@ -243,6 +243,10 @@ footer{
     }
 }
 
-.cards {
-    
+.cards-header h5 {
+    text-align: center;
+}
+
+.cards-header p {
+    vertical-align: center;
 }
