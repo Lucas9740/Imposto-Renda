@@ -11,10 +11,12 @@ function menuShow() {
     }
 }
 
+// Botão de Copiar o e-mail
+
 function copyButton() {
     document.getElementById("copyButton").addEventListener("click", function() {
         // Seleciona o email
-        var email = "lucas10besilva@gmail.com";
+        var email = "kellysouzacosta15@gmail.com";
         
         // Cria um elemento de input temporário
         var input = document.createElement("input");
@@ -35,13 +37,15 @@ function copyButton() {
       });
 }
 
+// Botão de encaminhar para Whatsapp
+
 function whatsappButton() {
     document.getElementById("whatsappButton").addEventListener("click", function() {
         // Número de telefone para iniciar a conversa no WhatsApp (incluindo o código do país)
-        var telefone = "5513988313339"; // Substitua por seu número de telefone
+        var telefone = "5513991641602"; // Substitua por seu número de telefone
         
         // Mensagem inicial opcional
-        var mensagem = "Olá, tudo bem?";
+        var mensagem = "Olá, tudo bem? Gostaria de verificar meu Imposto de Renda";
         
         // Cria o link para iniciar a conversa no WhatsApp
         var link = "https://wa.me/" + telefone + "?text=" + encodeURIComponent(mensagem);
