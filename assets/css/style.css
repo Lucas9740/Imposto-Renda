@@ -23,15 +23,13 @@ header {
     padding:  1.5rem 6rem;
 }
 
-.logo {
+.logo img{
     display: flex;
     align-items: center;
+    width: 5rem;
+    height: auto;
 }
 
-.logo h1 {
-    color: white;
-    cursor: pointer;
-}
 
 .logo:hover {
     color: #7f37c9;
@@ -233,6 +231,11 @@ footer{
     font-size: 0.9rem;
     padding: 1.5rem;
     font-weight: 100;
+}
+
+#footer_contacts img{
+    width: 20rem;
+    height: auto;
 }
 
 @media screen and (max-width: 660px) {
