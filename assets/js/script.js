@@ -54,3 +54,19 @@ function whatsappButton() {
         window.open(link, '_blank');
       });
 }
+
+function whatsappButton2() {
+    document.getElementById("whatsappButton2").addEventListener("click", function() {
+        // Número de telefone para iniciar a conversa no WhatsApp (incluindo o código do país)
+        var telefone = "5513991641602"; // Substitua por seu número de telefone
+        
+        // Mensagem inicial opcional
+        var mensagem = "Olá, tudo bem? Gostaria de verificar meu Imposto de Renda";
+        
+        // Cria o link para iniciar a conversa no WhatsApp
+        var link = "https://wa.me/" + telefone + "?text=" + encodeURIComponent(mensagem);
+        
+        // Redireciona o usuário para o link do WhatsApp
+        window.open(link, '_blank');
+      });
+}

@@ -175,6 +175,10 @@ footer{
     background-color: #25d366;
 }
 
+#whatsappButton2 {
+    background-color: #25d366;
+}
+
 #footer_subscribe {
     display: flex;
     flex-direction: column;
